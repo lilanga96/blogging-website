@@ -9,15 +9,29 @@
     font-size: x-large;
 }
 
+#showFormButton{
+  border: none;
+  outline: none;
+  background-color: rgb(250, 224, 201);
+  color: black;
+  border-radius: 15px;
+  position: relative;
+  left: 2rem;
+}
+
 .about-section{
-    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
+}
+
+.add-blog-form {
+  display: none;
 }
 
   .myInfo{
     text-align: center;
     position: relative;
-    top: 5rem;
+    top: 4.5rem;
     text-decoration: underline;
     text-decoration-color: rgb(250, 224, 201);;
   }
@@ -83,6 +97,11 @@ img{
     height: 250px;
 }
 
+.social-icons a{
+  text-decoration: none;
+  color: rgba(59, 48, 48, 0.986);
+}
+
 i{
     padding-right: 25px;
     font-size: 20px;
@@ -109,7 +128,7 @@ nav li a{
 
 .slider-wrapper .blog-list{
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   gap: 13px;
 }
 
@@ -171,7 +190,7 @@ nav li a{
     flex-wrap: wrap;
     justify-content: center;
 }
-/* Styles for the modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -206,6 +225,74 @@ nav li a{
   text-decoration: none;
   cursor: pointer;
 }
+
+.add-blog-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(250, 224, 201);
+}
+
+.add-blog-form h2 {
+  margin-top: 0;
+}
+
+.add-blog-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-blog-form input[type="text"],
+.add-blog-form input[type="date"],
+.add-blog-form select,
+.add-blog-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+.add-blog-form textarea {
+  height: 100px;
+}
+
+.add-blog-form button {
+  padding: 10px 20px;
+  background-color: rgb(250, 224, 201);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-blog-form button:hover {
+  background-color: rgb(250, 224, 201);
+}
+
+.add-blog-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.add-blog-form input[type="file"]::-webkit-file-upload-button {
+  padding: 10px 15px;
+  background-color: rgb(250, 224, 201);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-blog-form input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: rgb(250, 224, 201);
+}
+
 
 
 

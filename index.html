@@ -35,17 +35,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">CONTACT ME</a>
                 </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">BOOKS</a>
-                  </li>
               </ul>
             </div>
           </nav>
           <div class="social-icons">
-            <div class="facebook"><i class="ri-facebook-fill"></i></div>
-            <div class="twitter"><i class="ri-twitter-x-line"></i></div>
-            <div class="instagram"><i class="ri-instagram-line"></i></div>
-            <div class="github"><i class="ri-github-line"></i></div>
+            <div class="facebook"> <a href="https://www.facebook.com/siphesihle.dyalvane.9/" target="_blank">
+              <i class="ri-facebook-fill"></i>
+            </a></div>
+            <div class="twitter"> <a href="https://twitter.com/Isipho86250439/" target="_blank">
+
+            <i class="ri-twitter-x-line"></i></a>
+          </div>
+            <div class="instagram"><a href="https://www.instagram.com/_mamsuthu?igsh=MXFmbHI3bjY1dWQ4dA==" target="_blank"><i class="ri-instagram-line"></i></a></div>
+            <div class="github"><a href="https://github.com/lilanga96" target="_blank"><i class="ri-github-line"></i></a></div>
           </div>
     </header>
     <section>
@@ -55,6 +57,40 @@
         </div>
     </section>
     <main>
+      <button id="showFormButton">New Blog</button>
+
+<div class="add-blog-form">
+  <h2>Add New Blog</h2>
+  <form id="newBlogForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br><br>
+
+    <label for="author">Author:</label><br>
+    <input type="text" id="author" name="author"><br><br>
+
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="category">Category:</label><br>
+    <select id="category" name="category">
+      <option value="food">Food</option>
+      <option value="places">Places</option>
+      <option value="books">Books</option>
+      <option value="tech">Tech</option>
+    </select><br><br>
+
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" rows="4" cols="50"></textarea><br><br>
+
+    <label for="image">Image:</label><br>
+    <input type="file" id="image" name="image"><br><br>
+
+    <label for="video">Video:</label><br>
+    <input type="file" id="video" name="video"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
       
         <div class="categories">
           <div class="image-container">
@@ -77,8 +113,9 @@
         </div>
         
 
-          <p class="myInfo">ABOUT ME</p>
+          
         <div id="about" class="about-section">
+          <p class="myInfo">ABOUT ME</p>
           <div class="about-content">
           <p>My name is Siphesihle Dyalvane, I am  front-end developer.</br> I love food, sight seeing and coding,
              this is what this page is all about.</br> combining every thing that makes me happy in to one single website</br>
