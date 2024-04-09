@@ -107,7 +107,7 @@ function filterBlogs(category) {
           <img src="${blogImage}" alt="Blog Image">
           <div class="blog-content">
             ${blogDescription}
-            <!-- Add full content of the blog here -->
+      
           </div>
         </div>
       `;
